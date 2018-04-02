@@ -6,6 +6,3 @@ int main() {
 	system("pause");
 	return 0;
 }
-
->hello.exe>output.txt
->
