@@ -1,3 +1,8 @@
+K2051 2018 1558596 González Yebra Emanuel
+
+Fases de la Traducción y Errores
+
+
 1. Escribir hello2.c, que es una variante de hello.c:
 #include <stdio.h>
 int/*medio*/main(void){
