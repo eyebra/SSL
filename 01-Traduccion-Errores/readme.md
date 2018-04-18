@@ -6,7 +6,7 @@ int i=42;
 
 
 2. Preprocesar hello2.c, no compilar, y generar hello2.i. Analizar su contenido.
-Encuentro 690 líneas de código (desarrollado del #include) y el código original al final sin /*
+Encuentro 690 líneas de código (desarrollado del #include) y el código original al final sin /*medio*/
 
 
 3. Escribir hello3.c, una nueva variante:
@@ -21,17 +21,18 @@ La primer linea es el encabezado de la función printf junto con sus argumentos 
 
 
 5. Preprocesar hello3.c, no compilar, y generar hello3.i. Buscar diferencias entre hello3.c y hello3.i.
-Al no estar el #include se ve bastante reducido el .i (se observa el código original completo sin modificaciones)
+Al no estar el #include se ve bastante reducido el .i (se observa el código original completo sin modificaciones).
 
 
 6. Compilar el resultado y generar hello3.s, no ensamblar.
+Arroja error (Warning) al no estar declarado 'prontf' y otro error por la falta de la llave que cierra el main
 
 
 7. Corregir en el nuevo archivo hello4.c y empezar de nuevo, generar hello4.s, no ensamblar.
 
 
 8. Investigar hello4.s.
-Se encuentra el código en lenguaje Assembler
+Arroja error (Warning) al no estar el argumento del %d en el printf
 
 
 9. Ensamblar hello4.s en hello4.o, no vincular.
@@ -58,3 +59,4 @@ int i=42;
 
 
 15.Explicar porqué funciona.
+Funciona porque el printf funciona como cabecera para que el linker lo vincule con la biblioteca estándar
